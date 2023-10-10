@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@700&family=Lato&family=Open+Sans:wght@300&family=PT+Sans&family=Pacifico&family=Pixelify+Sans:wght@600&family=Poppins:wght@400;600&family=Roboto+Slab:wght@500&family=Roboto:wght@100;700&family=Rubik+Pixels&family=Young+Serif&display=swap');
+
+
+
+body{
+    background-color: black;
+    color:  aliceblue;
+}
+
+.banner{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img.jpg);
+background-position: center;
+
+
+}
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar h1{
+    
+    margin-left: -20px ;
+    font-family: 'Rubik Pixels', cursive;
+
+    font-weight: 600;
+    
+    
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: aliceblue;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbutton{
+    background-color: hsla(0, 0%, 100%, .3);
+    padding: 1rem 2.5rem;
+   
+    border-radius: .75rem;
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    transition: ease-in-out;
+   
+
+}
+
+.navbutton:hover{
+    opacity: 0.5;
+    
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(153, 232, 189);
+
+
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    font-weight: bold;
+    font-family: 'Roboto slab', sans-serif;
+   
+
+}
+.content p{
+    margin: 20px auto;
+    font-weight:100 ;
+    line-height: 25px;
+    font-size: 20px;
+    
+
+}
+
+
